@@ -1,13 +1,5 @@
-/*
-   InClass 03: My Profile
-   Group #: 28
-   Saloni Gupta 801080992
-   Renju Hanna Robin 801076715
-*/
-
 package com.example.inclass03;
 
-//import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -55,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            //@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch(radioGroup.getCheckedRadioButtonId()) {
@@ -103,9 +94,6 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-
-
-
                 Intent intent = new Intent(MainActivity.this, DisplayActivity.class);
                 User user = new User(
                         firstName.getText().toString(),
@@ -120,5 +108,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
