@@ -1,13 +1,5 @@
-/*
-   InClass 03: My Profile
-   Group #: 28
-   Saloni Gupta 801080992
-   Renju Hanna Robin 801076715
-*/
-
 package com.example.inclass03;
 
-//import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -33,7 +25,6 @@ public class EditActivity extends AppCompatActivity {
     Button saveNew;
     String flagImageNew;
     public static final String DEFAULT = "DEFAULT";
-    //@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +38,10 @@ public class EditActivity extends AppCompatActivity {
         saveNew = findViewById(R.id.saveButtonNew);
         setTitle("My Profile");
 
-
         final Bundle extrasFromDisplay = getIntent().getExtras().getBundle(DisplayActivity.TOEDIT);
         User user = (User) extrasFromDisplay.getSerializable(DisplayActivity.BUNDLETOEDIT);
         firstNameNew.setText(user.getFirstName());
         lastNameNew.setText(user.getLastName());
-
 
         if(user != null) {
             if (user.getGender().equals(MainActivity.MALE)) {
@@ -64,7 +53,6 @@ public class EditActivity extends AppCompatActivity {
                 flagImageNew = MainActivity.FEMALE;
                 imageViewNew.setImageDrawable(getDrawable(R.drawable.female));
             }
-
         }
 
         radioGroupNew.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -91,7 +79,6 @@ public class EditActivity extends AppCompatActivity {
         saveNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
 
                 boolean names = false;
                 boolean genderChecked = false;
