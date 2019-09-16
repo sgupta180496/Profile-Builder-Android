@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">InClass03</string>
+    <string name="firstName" />
+    <string name="lastName" />
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save">Save</string>
+    <string name="displayName" />
+    <string name="displayGender" />
+    <string name="editButton">Edit</string>
+    <string name="firstNameNew" />
+    <string name="lastNameNew" />
+    <string name="maleNew">Male</string>
+    <string name="saveButtonNew" />
+    <string name="saveNew">Save</string>
+    <string name="StringRange">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="firstNameOld">First Name</string>
+    <string name="textViewSelectGender">Select Gender</string>
+    <string name="textViewSelectGenderEdit">Select Gender</string>
+</resources>
